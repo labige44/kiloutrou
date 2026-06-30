@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KILOUTROU - Location de Sex-Toys | La force du plaisir</title>
+    <meta name="description" content="Découvrez KILOUTROU, le leader parodique de la location de sex-toys et d'équipements de plaisir. Louez. Jouez. Renvoyez. Matériel désinfecté et testé !">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@600;800;900&display=swap" rel="stylesheet">
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">
+                <!-- Logo Parodique KILOUTROU SVG -->
+                <svg id="kiloutrou-logo" class="kiloutrou-logo-svg" viewBox="0 0 280 80" width="180" height="50">
+                    <!-- Fond noir type Kiloutou -->
+                    <rect x="0" y="0" width="280" height="80" rx="6" fill="#000000"/>
+                    <!-- Partie "K" en jaune -->
+                    <text x="15" y="58" font-family="'Outfit', sans-serif" font-weight="900" font-size="52" fill="#FFD200">K</text>
+                    <!-- Le "I" modifié de façon suggestive (le bonhomme Kiloutou revisité en vibromasseur) -->
+                    <g transform="translate(56, 12)">
+                        <!-- Cercle de tête (jaune) -->
+                        <circle cx="12" cy="18" r="8" fill="#FFD200"/>
+                        <!-- Corps en forme de vibro avec ondes (blanc/rose) -->
+                        <path d="M 6 34 C 6 28 18 28 18 34 L 18 52 C 18 56 6 56 6 52 Z" fill="#FFFFFF"/>
+                        <!-- Petites ondes de vibration -->
+                        <path d="M 1 25 Q -3 30 1 35" stroke="#FFD200" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <path d="M 23 25 Q 27 30 23 35" stroke="#FFD200" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                    </g>
+                    <!-- Reste du texte "LOUTROU" -->
+                    <text x="88" y="58" font-family="'Outfit', sans-serif" font-weight="900" font-size="44" fill="#FFFFFF">LOUTROU</text>
+                </svg>
+            </a>
+            <nav class="nav-links">
+                <a href="#concept">Le Concept</a>
+                <a href="#catalogue">Le Matériel</a>
+                <a href="#comparatif">Achat vs Location</a>
+                <a href="#booking" class="btn-nav">Louer un équipement</a>
+            </nav>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu Mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#concept">Le Concept</a>
+        <a href="#catalogue">Le Matériel</a>
+        <a href="#comparatif">Achat vs Location</a>
+        <a href="#booking" class="btn-nav">Louer un équipement</a>
+    </div>
+
+    <!-- Section Héro -->
+    <section class="hero-section">
+        <div class="hero-container container">
+            <div class="hero-text">
+                <div class="badge-humor">⚡ Parodie Professionnelle de la Location</div>
+                <h1>Kiloutrou, la force du <span>plaisir.</span></h1>
+                <p>Besoin de matériel pour vos soirées ou vos chantiers intimes ? <strong>KILOUTROU</strong> met à votre disposition le plus grand parc d'équipements vibrants, massants et stimulants en location. Toujours lavé, désinfecté et testé !</p>
+                <div class="hero-ctas">
+                    <a href="#booking" class="btn-primary">Consulter les tarifs de location</a>
+                    <a href="#catalogue" class="btn-secondary">Découvrir le catalogue</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- LOGO KILOUTROU GRAND FORMAT -->
+                <div class="logo-card">
+                    <svg viewBox="0 0 200 200" width="180" height="180">
+                        <circle cx="100" cy="100" r="90" fill="#000000" stroke="#FFD200" stroke-width="5"/>
+                        <!-- Symbole de chantier croisé avec un gode / coeur -->
+                        <g transform="translate(100, 100)">
+                            <!-- Clé à molette / vibro croisés -->
+                            <path d="M -40 -10 L 40 10" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+                            <path d="M -10 -40 L 10 40" stroke="#FFD200" stroke-width="12" stroke-linecap="round"/>
+                            <!-- Tête de vibro arrondie -->
+                            <circle cx="10" cy="-40" r="10" fill="#FFD200"/>
+                            <!-- Ondes -->
+                            <circle cx="10" cy="-40" r="22" fill="none" stroke="#FFD200" stroke-dasharray="10 10" stroke-width="2"/>
+                            <!-- Petit coeur au milieu -->
+                            <path d="M 0 -5 C -10 -15 -20 -5 0 15 C 20 -5 10 -15 0 -5 Z" fill="#FF4500"/>
+                        </g>
+                    </svg>
+                    <div class="logo-text-container">
+                        <div class="logo-title">KILOUTROU</div>
+                        <div class="logo-subtitle">LOCATION PROFESSIONNELLE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Concept -->
+    <section class="concept-section" id="concept">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pourquoi louer chez KILOUTROU ?</h2>
+                <div class="divider"></div>
+                <p class="subtitle">La performance de niveau industriel au service de vos moments intimes.</p>
+            </div>
+            
+            <div class="concept-grid">
+                <div class="concept-card">
+                    <div class="card-icon">🧼</div>
+                    <h3>Hygiène 100% Garantie</h3>
+                    <p>Chaque équipement subit un nettoyage cryogénique haute pression et une stérilisation en autoclave de classe B après chaque retour de chantier.</p>
+                </div>
+                <div class="concept-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Zéro Achat Inutile</h3>
+                    <p>Pourquoi acheter un vibromasseur industriel à 300€ qui va finir au fond d'un tiroir ? Louez-le uniquement pour le week-end et changez de modèle à volonté !</p>
+                </div>
+                <div class="concept-card">
+                    <div class="card-icon">📦</div>
+                    <h3>Livraison Ultra Discrète</h3>
+                    <p>Nos camions jaunes n'affichent aucune publicité suggestive. Les colis sont livrés sous scellés neutres par nos techniciens de confiance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Catalogue / Matériels (Cartes 3D) -->
+    <section class="services-section" id="catalogue">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Parc de Matériel de Pointe</h2>
+                <div class="divider"></div>
+                <p class="subtitle">Cliquez sur un équipement pour consulter sa fiche technique détaillée.</p>
+            </div>
+
+            <div class="services-grid">
+                
+                <!-- Carte 1 -->
+                <div class="service-item-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="service-icon">🍆</div>
+                            <h3>Perforateur Double-Vitesse</h3>
+                            <span class="badge-card pro">Usage Intensif</span>
+                            <div class="click-hint">Fiche technique ➔</div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Perforateur Double-Vitesse</h3>
+                            <p>Moteur brushless haute performance, autonomie de 4 heures de vibrations continues. Idéal pour les gros travaux de fin de soirée. Poignée ergonomique SoftGrip.</p>
+                            <button class="btn-flip-back">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte 2 -->
+                <div class="service-item-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="service-icon">🌀</div>
+                            <h3>Aspirateur de Fluides</h3>
+                            <span class="badge-card pro">Technologie d'ondes</span>
+                            <div class="click-hint">Fiche technique ➔</div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Aspirateur de Fluides</h3>
+                            <p>Stimulateur d'ondes de pression à technologie sans contact. Dispose de 11 intensités d'aspiration pour des décollages immédiats. Totalement étanche.</p>
+                            <button class="btn-flip-back">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte 3 -->
+                <div class="service-item-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="service-icon">🦆</div>
+                            <h3>Canard de Chantier</h3>
+                            <span class="badge-card securite">Classique</span>
+                            <div class="click-hint">Fiche technique ➔</div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Canard de Chantier</h3>
+                            <p>Notre célèbre canard vibrant étanche. Coque en silicone biocompatible, 10 modes de pulsations. Parfait pour les chantiers humides en baignoire.</p>
+                            <button class="btn-flip-back">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte 4 -->
+                <div class="service-item-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="service-icon">📳</div>
+                            <h3>Ponceuse Vibrante</h3>
+                            <span class="badge-card premium">Stimulation Externe</span>
+                            <div class="click-hint">Fiche technique ➔</div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Ponceuse Vibrante</h3>
+                            <p>Une surface de contact extra-large pour une stimulation ciblée des zones sensibles. Moteur silencieux à haute fréquence.</p>
+                            <button class="btn-flip-back">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte 5 -->
+                <div class="service-item-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="service-icon">⛓️</div>
+                            <h3>Compacteur de Couple</h3>
+                            <span class="badge-card securite">BTP (Bien-être Très Personnel)</span>
+                            <div class="click-hint">Fiche technique ➔</div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Compacteur de Couple</h3>
+                            <p>Anneau de maintien vibrant pour retarder l'échéance et maximiser la fermeté de l'échafaudage. Silicone élastique ultra-doux.</p>
+                            <button class="btn-flip-back">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte 6 -->
+                <div class="service-item-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="service-icon">🔮</div>
+                            <h3>Balles de Chantier</h3>
+                            <span class="badge-card premium">Musculation</span>
+                            <div class="click-hint">Fiche technique ➔</div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Balles de Chantier</h3>
+                            <p>Balles de Kegel lestées pour muscler le plancher pelvien. Système de billes rotatives internes pour des micro-vibrations naturelles lors des déplacements.</p>
+                            <button class="btn-flip-back">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Garantie Kiloutou détournée -->
+            <div class="full-tank-card">
+                <div class="thumbs-up-icon">🔋</div>
+                <h3>Engagement de Restitution : Rendu Propre et Rechargé !</h3>
+                <p>Tous nos appareils sont fournis avec batteries lithium-ion chargées à 100%. Nous vous demandons simplement de les essuyer avant de les remettre dans leur mallette jaune de transport.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Comparatif Achat vs Location -->
+    <section class="comparative-section" id="comparatif">
+        <div class="container">
+            <div class="section-header">
+                <h2>Achat vs Location KILOUTROU</h2>
+                <div class="divider"></div>
+                <p class="subtitle">Faites le calcul : louer est toujours plus économique et excitant !</p>
+            </div>
+
+            <div class="table-container">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>Critère</th>
+                            <th>Achat en Boutique Intime</th>
+                            <th class="highlight-column">Location KILOUTROU</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Budget moyen</strong></td>
+                            <td>80€ à 150€ par équipement</td>
+                            <td class="highlight-column"><strong>9,90€ par week-end</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Variété du matériel</strong></td>
+                            <td>Vous gardez le même pendant 5 ans</td>
+                            <td class="highlight-column"><strong>Changement de modèle à chaque week-end</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Maintenance & Piles</strong></td>
+                            <td>À votre charge (toujours en panne)</td>
+                            <td class="highlight-column"><strong>Matériel révisé et batterie pleine fournie</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Discrétion</strong></td>
+                            <td>Facture louche sur votre compte bancaire</td>
+                            <td class="highlight-column"><strong>Libellé discret "KBT Outillage & Services"</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fin de vie de l'appareil</strong></td>
+                            <td>Prend la poussière ou finit à la poubelle</td>
+                            <td class="highlight-column"><strong>Recyclage et re-stérilisation pro ♻️</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formulaire de Réservation / Devis -->
+    <section class="booking-section" id="booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <h2>Obtenir un Devis / Louer un Équipement</h2>
+                    <p>Remplissez notre formulaire de réservation pour réserver votre mallette de chantier jaune pour le week-end prochain.</p>
+                    <div class="info-checklist">
+                        <div class="info-item">✔ Matériel désinfecté sous scellé</div>
+                        <div class="info-item">✔ Câble de charge rapide USB-C inclus</div>
+                        <div class="info-item">✔ Guide de démarrage rapide illustré</div>
+                    </div>
+                </div>
+                <div class="booking-form-container">
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-group">
+                            <label for="clientName">Nom complet du technicien / de la technicienne *</label>
+                            <input type="text" id="clientName" placeholder="Ex: Jean-Michel Plaisir" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="equipementSelect">Sélectionner l'équipement</label>
+                            <select id="equipementSelect">
+                                <option value="perforateur">Perforateur Double-Vitesse 🍆</option>
+                                <option value="aspirateur">Aspirateur de Fluides 🌀</option>
+                                <option value="canard">Canard de Chantier 🦆</option>
+                                <option value="ponceuse">Ponceuse Vibrante 📳</option>
+                                <option value="compacteur">Compacteur de Couple ⛓️</option>
+                                <option value="balles">Balles de Chantier 🔮</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="optionSelect">Durée de la location</label>
+                            <select id="optionSelect">
+                                <option value="weekend">Forfait "Week-end Intense" (Du vendredi au lundi) ⚡</option>
+                                <option value="semaine">Forfait "Semaine de chantier" (5 jours) 🔋</option>
+                                <option value="night">Forfait "Intervention Nocturne Rapide" (24h) 🌙</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Valider le Bon de Commande 🚀</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 KILOUTROU S.A.S. - Parodie humoristique inspirée de Kiloutou. Tous droits de rigolade réservés.</p>
+            <p class="legal">Kiloutrou n'est en aucun cas affilié à la société Kiloutou. Ne pas utiliser ces équipements pour de réels travaux de maçonnerie ou de plomberie.</p>
+        </div>
+    </footer>
+
+    <!-- Pop-up de confirmation (Modal) -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-card">
+            <div class="modal-rocket">🛠️</div>
+            <h2>Bon de Commande Émis !</h2>
+            <div class="modal-divider"></div>
+            <p>Félicitations, <strong id="modalClientName">Client</strong>. Votre commande a été enregistrée avec succès chez <strong>KILOUTROU</strong> !</p>
+            <div class="modal-details">
+                <p><strong>Équipement réservé :</strong> <span id="modalEquipement">Perforateur</span></p>
+                <p><strong>Option choisie :</strong> <span id="modalOption">Forfait Week-end</span></p>
+            </div>
+            <p class="modal-instructions">⚠️ Retrait en agence sur présentation de votre carte d'identité intime !</p>
+            <button class="btn-modal-close" id="closeModalBtn">Compris, au travail !</button>
+        </div>
+    </div>
+
+    <!-- Canvas pour confettis -->
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <!-- Javascript -->
+    <script src="app.js"></script>
+</body>
+</html>
